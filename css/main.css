@@ -60,6 +60,9 @@ h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle{
 .message p {
   margin-top: 75px;
 }
+.message .separator{
+  margin-top:50px;
+}
 
 /* Features*/
 .features .columns{
