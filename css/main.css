@@ -49,9 +49,6 @@ h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle{
   width:100%;
   bottom:20px;
   text-align:center;
-  width:10px;
-  left:50%;
-  margin-left:-5px;
 }
 /* Message */
 .message h1{
