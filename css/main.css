@@ -50,6 +50,9 @@ h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle{
   bottom:20px;
   text-align:center;
 }
+.clear{
+  clear:both;
+}
 /* Message */
 .message h1{
   font-family: 'Oswald', sans-serif;
@@ -77,7 +80,7 @@ h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle{
 }
 /* Separator */
 .separator, .footer{
-  background: #222;
+  background: #3498db;
   height:50px;
 }
 
