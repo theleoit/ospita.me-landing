@@ -33,10 +33,13 @@ h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle{
   position:relative;
 }
 .title .cloud{
+  width:350px;
   height:260px;
   position: absolute;
   top: 50%;
+  left:50%;
   margin-top: -130px;
+  margin-left: -175px;
 }
 .title h1{
   font-family: 'Lily Script One', cursive;
