@@ -131,11 +131,3 @@ h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle{
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
 }
-
-/* Mobile */
-@media only screen and (max-device-width: 480px) {
-  .row{
-    margin:0;
-    width:100%;
-  }
-}
