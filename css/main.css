@@ -21,8 +21,6 @@ h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle{
 .alternate{
   background-color: #ecf0f1;
   color: #222;
-  padding-top: 4em;
-  padding-bottom: 4em
 }
 .love{
   color: #e70006;
@@ -86,13 +84,16 @@ h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle{
 }
 
 /* Separator */
-.separator, .footer{
+.separator{
   background: #3498db;
   height:50px;
+  margin-top: 4em;
+  margin-bottom: 4em
 }
 
 /* Footer */
 .footer {
+  background: #3498db;
   padding-top: 20px;
   padding-bottom:50px;
 }
