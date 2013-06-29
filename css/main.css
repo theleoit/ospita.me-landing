@@ -82,6 +82,10 @@ h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle{
 .features img{
   width:65%;
 }
+/* Faq */
+.faq{
+  padding-bottom:50px;
+}
 
 /* Separator */
 .separator{
