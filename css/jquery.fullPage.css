@@ -334,3 +334,168 @@ abbr,acronym {
         height: 25px;
     }
 }
+
+
+
+
+
+
+
+#superContainer {
+    height: 100%;
+    position: relative;
+}
+
+.section {
+    position: relative;
+}
+
+#section0 {
+    background: url(../img/ground/h-land-0.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#section1 {
+    background: url(../img/ground/h-land-3.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+/*    webkit-gradient(linear, top left, bottom left, from(#969ac6), to(#92a1ca));
+background: -webkit-linear-gradient(#969ac6, #92a1ca);
+background: linear-gradient(#969ac6,#92a1ca);*/;
+}
+
+#section2 {
+    background: url(../img/ground/h-land-4.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  /*  webkit-gradient(linear, top left, bottom left, from(#92a1ca), to(#76c2bd));
+background: -webkit-linear-gradient(#92a1ca, #76c2bd);
+background: linear-gradient(#92a1ca,#76c2bd);*/;
+}
+
+#section3 {
+    background: url(../img/ground/h-land-5.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*
+    background: -webkit-gradient(linear, top left, bottom left, from(#76c2bd), to(#76c38f));
+background: -webkit-linear-gradient(#76c2bd, #76c38f);
+background: linear-gradient(#76c2bd,#76c38f);*/;
+}
+
+#section4 {
+    background: url(../img/ground/h-land-6.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*
+    background: -webkit-gradient(linear, top left, bottom left, from(#76c38f), to(#7db993));
+background: -webkit-linear-gradient(#76c38f, #7db993);
+background: linear-gradient(#76c38f,#7db993);*/;
+}
+
+#section5 {
+    background: url(../img/ground/h-land-7.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*
+    background: url(../img/ground/h-land-7.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/;
+}
+
+#section6 {
+    background: url(../img/ground/h-land-8.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#section7 {
+    background: url(../img/ground/h-land-9.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#section8 {
+    background: url(../img/ground/h-land-10.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.slide {
+    float: left;
+}
+
+.slide, .slidesContainer {
+    height: 100%;
+    display: block;
+}
+
+.slides {
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.section.table {
+    display: table;
+    width: 100%;
+}
+
+.tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    background: rgba(255,255,255,0.9);
+}
+
+.slidesContainer {
+    float: left;
+    position: relative;
+}
+
+.controlArrow {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    margin-top: -38px;
+}
+
+.controlArrow.prev {
+    left: 15px;
+    width: 0px;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.controlArrow.next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+}

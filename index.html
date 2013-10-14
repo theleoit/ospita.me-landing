@@ -1,135 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Ospita.me</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="Federico Rampazzo">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="/Icon@2x.png"/>
-  <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <link href='http://fonts.googleapis.com/css?family=Lato|Lily+Script+One|Oswald' rel='stylesheet' type='text/css'>
-  <link href="http://cdn.jsdelivr.net/foundation/4.2.2/css/foundation.min.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-</head>
-<body>
-  <div id="title"  class="row title">
-    <div class="large-12 columns cloud">
-      <h1 id="cloud">Ospita.me</h1>
-    </div>
-    <div class="scroll-down">↓</div>
-  </div>
-  
-  <div id="message" class="alternate message">
-    <div class="row">
-      <h1>SOCIAL, LOCAL, MOBILE</h1>
-      <h2 class="subtitle">Fatti vedere nella maniera giusta in ogni canale,<br />
-          vendi più camere e taglia gli intermediari</h2>
-      <h2>La piattaforma one-stop per gli albergatori è arrivata.</h2>
-    </div>
-  <div class="separator"><div></div></div>
-    <div class="row text-center">
-      <ul><li><p><a href="http://ospita.me">Ospita.me</a> ti offre una soluzione di marketing digitale totalmente integrata, semplice da utilizzare e alla portata di ogni budget, che aiuta le strutture ricettive di ogni dimensione a gestire la propria presenza online per aumentare il tasso di occupazione e ridurre i costi di distribuzione facilitando le conversioni dirette.</p></li></ul>
-    </div>
-  </div>
-  
-  <div class="separator"><div></div></div>
-  
-  <div></div>
-  
-  <div id="features" class="alternate features">
-    <div class="row">
-      <h2>Features</h2>
-      <div class="large-12 columns">
-        <div class="row">
-
-          <div class="large-4 small-12 columns">
-            <img src="img/features/responsive.png" />
-            <h6 class="panel">sito responsive</h6>
-          </div>
-
-          <div class="large-4 small-12 columns">
-            <img src="img/features/mobile.png" />
-            <h6 class="panel">sito mobile</h6>
-          </div>
-
-          <div class="large-4 small-12 columns">
-            <img src="img/features/facebook.png" />
-            <h6 class="panel">app facebook</h6>
-          </div>
-
-        </div>
-        <div class="row">
-        
-          <div class="large-4 small-12 columns">
-            <img src="img/features/booking-engine.png" />
-            <h6 class="panel">booking engine</h6>
-          </div>
-
-          <div class="large-4 small-12 columns">
-            <img src="img/features/social-couponing.png" />
-            <h6 class="panel">social couponing</h6>
-          </div>
-          
-          <div class="large-4 small-12 columns">
-            <img src="img/features/more.png" />
-            <h6 class="panel">e molto altro</h6>
-          </div>
-
-        </div>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <link href="img/favicon.ico" rel="shortcut icon" />
+      <title>OSPITA.me</title>
+      <!-- Css -->
+      <link href="css/bootstrap.css" media="screen" rel="stylesheet">
+      <link href="css/jquery.fullPage.css" media="screen" rel="stylesheet">
+      <link href="css/main.css" media="screen" rel="stylesheet">
+      <link href="css/animate.css" media="screen" rel="stylesheet">
+      <link href="css/font-awesome.min.css" media="screen" rel="stylesheet">
+      <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,200' rel='stylesheet' type='text/css'>
+      <!-- IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body >
+      <!-- Javascript -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+      <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> 
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/holder.js"></script>
+      <script src="js/jquery.fullPage.js"></script>
+      <script src="js/main.js"></script>
+      <script type="text/javascript">
+         //fullPage
+         $(document).ready(function() {
+           $.fn.fullpage({
+             anchors: ['home', 'website-building','mobile-and-tablets', 'booking-engine', 'facebook-app','social-monitoring', 'channel-manager', 'hotel-management','revenue-management'],
+             menu: '#icons-navigation',
+             resize: false,
+             afterLoad: function(anchorLink, index){
+                if(anchorLink == 'website-building'){
+                    $('#tab-build').addClass('animated flipInX visible');
+                }
+                if(anchorLink == 'mobile-and-tablets'){
+                    $('#tab-mobile').addClass('animated bounceIn visible');
+                }
+             }
+           });
+           
+         });
+      </script>
+      <nav id="nav-fixed" class="navbar navbar-fixed" role="navigation">
+         <!-- Brand and toggle get grouped for better mobile display -->
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#home"><img src="img/logo-black.png" alt="ospita.me"></a>
+         </div>
+         <!-- Collect the nav links, forms, and other content for toggling -->
+         <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-h-right">
+               <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="#website-building">Website Buildign</a></li>
+                     <li><a href="#mobile-and-tablets">Responsive Layout</a></li>
+                     <li><a href="#booking-engine">Booking Engine</a></li>
+                     <li><a href="#facebook-app">Facebook App</a></li>
+                     <li><a href="#social-monitoring">Social Monitoring</a></li>
+                     <li><a href="#channel-manager">Channel Manager</a></li>
+                     <li><a href="#hotel-management">Hotel Management</a></li>
+                     <li><a href="#revenue-management">Revenue Management</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <!-- /.navbar-collapse -->
+      </nav>
+      <div id="icon-menu" >
+         <ul id="icons-navigation" class="nav nav-pills nav-stacked" data-role="navigation" >
+            <li class="menu-icon" data-menuanchor="website-building">
+               <a href="#website-building" data-toggle="tooltip" title="Website Building" ><span>Website Builder</span><img src="img/svg/build-website.svg" alt="#" ></a>
+            </li>
+            <li class="menu-icon" data-menuanchor="mobile-and-tablets" >
+               <a href="#mobile-and-tablets" data-toggle="tooltip" title="Responsive Layout" ><span>Responsive Layout</span><img src="img/svg/responsive.svg" alt="#" ></a>
+            </li>
+            <li class="menu-icon" data-menuanchor="booking-engine">
+               <a href="#booking-engine" data-toggle="tooltip" title="Booking Engine"><span>Booking Engine</span><img src="img/svg/booking.svg" alt="#" ></a>
+            </li>
+            <li class="menu-icon" data-menuanchor="facebook-app">
+               <a href="#facebook-app" data-toggle="tooltip" title="Facebook App" ><span>Facebook App</span><img src="img/svg/facebook-app.svg" alt="#" ></a>
+            </li>
+            <li class="menu-icon" data-menuanchor="social-monitoring">
+               <a href="#social-monitoring" data-toggle="tooltip" title="Social Monitoring"><span>Social Monitoring</span><img src="img/svg/social-monitoring.svg" alt="#" ></a>
+            </li>
+            <li class="menu-icon" data-menuanchor="channel-manager">
+               <a href="#channel-manager" data-toggle="tooltip" title="Channel Manager"><span>Channel Manager</span><img src="img/svg/channel-manager.svg" alt="#" ></a>
+            </li>
+            <li class="menu-icon" data-menuanchor="hotel-management">
+               <a href="#hotel-management" data-toggle="tooltip" title="Hotel Management"><span>Hotel Management</span><img src="img/svg/hotel-management.svg" alt="#" ></a>
+            </li>
+            <li class="menu-icon" data-menuanchor="revenue-management">
+               <a href="#revenue-management" data-toggle="tooltip" title="Revenue Management"><span>Revenue Management</span><img class="icon-svg" src="img/svg/revenue.svg" alt="#" ></a>
+            </li>
+         </ul>
       </div>
-    </div>
-  </div>
-  
-  <div class="separator"><div></div></div>
-  
-  <div id="faq" class="alternate faq">
-    <div class="row">
-      <h2>Domande Frequenti</h2>
-      
-      <ul>
-        <li>
-          <h3>Cos'è esattamente <a href="http://ospita.me">Ospita.me</a>?</h3>
-          <p>
-          <a href="http://ospita.me">Ospita.me</a> è una soluzione integrata per gestire la tua presenza online. Crea un sito ottimizzato per desktop, tablet e per mobile, gestisci i tuoi contenuti e le tue offerte su web e su Facebook, accetta prenotazioni direttamente online, fatti raggiungere dai clienti in più momenti, gestisci le tariffe e le disponibilità contemporaneamente su tutti i portali.
-        </li><li>
-          <h3>Come mi aiuta?</h3>
-          <p>
-          <a href="http://ospita.me">Ospita.me</a> ti aiuta a vendere più camere direttamente e a ridurre i costi di intermediazione, facilitanto le conversioni dirette dal tuo sito e da mobile. Inoltre integrando al suo interno gli strumenti di gestione di vari canali, ti permette di risparmiare tempo e concentrarti su quello che sai fare meglio: rendere indimenticabile il soggiorno dei tuoi clienti.
-        </p>
-        </li><li>
-          <h3>Quanto costa?</h3>
-          <p>
-          Creare il tuo sito destktop, tablet e la tua Facebook App è totalmente gratuito! Per accedere alle altre caratteristiche del servizio, come il booking engine o la possibilità di fare campagne promozionali tramite Facebook, è previsto un abbonamento mensile, che potrai disdire in ogni momento.
-          Pubblicheremo i prezzi prima del lancio<!--: iscriviti oggi per per ricevere le promozioni riservate esclusivamente ai primi clienti-->!
-        </p>
-        </li><li>
-          <h3>Devo installare qualcosa?</h3>
-          <p>
-          No, <a href="http://ospita.me">Ospita.me</a> è un servizio basato sul cloud, quindi accessibile da browser (Chrome, Internet Explorer, Safari, Firefox) e con qualsiasi dispositivo, in ogni momento, ovunque tu sia. 
-          Nulla da installare, nulla da disinstallare, nessun fastidio.
-          </p>
-        </li><li>
-          <h3>Quando sarà attivo il servio?</h3>
-          <p>
-          <a href="http://ospita.me">Ospita.me</a> sarà attivo da ottobre 2013
-          </p>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="row">
-        Growing with <span class="love">♥</span> in H-FARM <img src="img/h-farm.png" />
-    </div>
-  </div>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+      <!-- home -->
+      <div class="section h-home" id="section0">
+         <div class="container">
+            <div class="centered row">
+               <div class="col-xs-0 col-sm-2 col-md-2"></div>
+               <div class="col-xs-9 col-sm-8 col-md-8">
+                  <div id="digital-power" >
+                     <h1>Digital power for your hotel</h1>
+                     <h2>Tutti gli strumenti di marketing digitale per il tuo hotel</h2>
+                  </div>
+                  <!-- MailChimp -->
+                  <div id="mc_embed_signup" class="control-group">
+                     <form action="http://ospita.us7.list-manage.com/subscribe/post?u=31354df2e0d65475e24cb2fb7&amp;id=6db61d3ed0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <label class="control-label" for="mce-EMAIL">RIMANI AGGIORNATO</label>
+                        <div class="input-group input-group-lg input-no-radius">
+                           <span class="input-group-addon"><i class="icon-envelope"></i></span>
+                           <input type="text" class="form-control" id="mce-EMAIL" value="" name="EMAIL" placeholder="email address" required>
+                           <span class="input-group-btn">
+                           <input type="submit" name="subscribe" class="btn btn-danger" value="Subscribe" >
+                           </span>
+                        </div>
+                     </form>
+                  </div>
+                  <!-- End MailChimp -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- 1 build website -->
+      <div class="section h-home" id="section1">
+         <div class="container">
+            <div class="centered row">
+               <div class="col-xs-0 col-sm-2 col-md-2"></div>
+               <div class="col-xs-9 col-sm-8 col-md-8">
+                  <div id="tab-build" class="not-visible" >
+                     <h1>Costruisci <br>il tuo sito</h1>
+                     <h2>Tutti gli strumenti di marketing digitale per il tuo hotel</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- 2 mobile -->       
+      <div class="section h-home" id="section2">
+         <div class="container">
+            <div class="centered row">
+               <div class="col-xs-0 col-sm-2 col-md-2"></div>
+               <div class="col-xs-9 col-sm-8 col-md-8">
+                  <div id="tab-mobile" class="not-visible">
+                     <h1>Mobile</h1>
+                     <h2>Per essere sempre ad un touch di distanza dai tuoi clienti, ovunque essi siano</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- 3 booking engine -->
+      <div class="section h-home" id="section3">
+         <div class="container">
+            <div class="centered row">
+               <div class="col-xs-0 col-sm-2 col-md-2"></div>
+               <div class="col-xs-9 col-sm-8 col-md-8">
+                  <div id="digital-power" >
+                     <h1>Booking Engine</h1>
+                     <h2>Un booking engine sempre perfetto: su web, smartphone e social network</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- 4 facebook app -->
+      <div class="section h-home" id="section4">
+         <div class="container">
+            <div class="centered row">
+               <div class="col-xs-0 col-sm-2 col-md-2"></div>
+               <div class="col-xs-9 col-sm-8 col-md-8">
+                  <div id="digital-power" >
+                     <h1>Facebook App</h1>
+                     <h2>Permetti ai tuoi clienti di prenotare direttamente da Facebook</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- 5 social monitoring -->
+      <div class="section h-home" id="section5">
+         <div class="container">
+            <div class="centered row">
+               <div class="col-xs-0 col-sm-2 col-md-2"></div>
+               <div class="col-xs-9 col-sm-8 col-md-8">
+                  <div id="digital-power" >
+                     <h1>Social Monitor</h1>
+                     <h2>La tua reputazione conta. Controlla e gestisci le recensioni online da un'unica piattaforma</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- 6 channel manager -->
+      <div class="section h-home" id="section6">
+         <div class="container">
+            <div class="centered row">
+               <div class="col-xs-0 col-sm-2 col-md-2"></div>
+               <div class="col-xs-9 col-sm-8 col-md-8">
+                  <div id="digital-power" >
+                     <h1>Channel Manager</h1>
+                     <h2>Gestisci tutti i tuoi canali di vendita da un'unica interfaccia</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- 7 software gestionale -->
+      <div class="section h-home" id="section7">
+         <div class="container">
+            <div class="centered row">
+               <div class="col-xs-0 col-sm-2 col-md-2"></div>
+               <div class="col-xs-9 col-sm-8 col-md-8">
+                  <div id="digital-power" >
+                     <h1>Software Gestionare</h1>
+                     <h2>Check-in, check-out, addebiti, fatture, schedule PS, Istat e tanto altro</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- 8 revenue management -->
+      <div class="section h-home" id="section8">
+         <div class="container">
+            <div class="centered row">
+               <div class="col-xs-0 col-sm-2 col-md-2"></div>
+               <div class="col-xs-9 col-sm-8 col-md-8">
+                  <div id="digital-power" >
+                     <h1>Revenue management e cost control</h1>
+                     <h2>Pianifica e ottimizza ricavi e costi della tua struttura</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
 </html>

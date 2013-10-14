@@ -1,11 +1,8 @@
-var sections = ['title', 'message', 'features', 'faq'];
+$(document).ready(function(){
+  $('#digital-power').addClass('animated fadeInUp');
+  $('#icon-menu').addClass('animated fadeInRightBig');
 
-for (var i=0, l=sections.length-1; i<l; i++){
-  $('#' + sections[i]).click((function(next){
-    return function(){
-      $('html, body').animate({
-          scrollTop: $("#" + next).offset().top
-      }, 500);
-    };
-  })(sections[i+1])); 
-}
+ // $('.menu-icon a').tooltip({ delay: { show: 150, hide: 100 }, placement: 'left'});
+});
+
+
